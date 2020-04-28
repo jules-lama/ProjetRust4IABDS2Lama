@@ -1,6 +1,11 @@
 # ProjetRust4IABDS2Lama
 
-1 Introduction
+## 1 Questions : Rappels de Rust, généralités
 
-1.1 Processus
+1.
+
+
+
+
+
 
