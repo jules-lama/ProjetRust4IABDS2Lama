@@ -95,8 +95,19 @@ fn main() -> std::io::Result<()> {
 }
 ```
 
-## Execution d’un Processus
+## 3. Execution d’un Processus
 
+```
+use std::process::Command; //Création d'un process
+    let status = Command::new("ls")
+        .status()
+        .expect("failed to execute process");
+    println!("process exited with: {}", status);
+    assert!(status.success());
+```
+```
+//Source : https://doc.rust-lang.org/1.34.0/std/io/struct.Stdout.html
+```
 
 
 
