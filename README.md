@@ -55,4 +55,22 @@ Source : https://www.journaldunet.fr/web-tech/dictionnaire-du-webmastering/
 
 #### 2.1.1 Créons un projet binaire avec cargo 
 
+```
+Pour compiler et exécuter un programme on peut utiliser la commande 
+cargo run sous powershell ou utiliser la commande Run Code lorsque nous
+somme sous Visual Code avec tous les extensions installées.
+
+Pour exécuter les tests, nous pouvons effectuer un cargo test (à partir du 
+répertoire micro-shell/src/main.rs ) immédiatement pour vérifier si tout 
+fonctionne.
+
+Les binaires en mode debug sont rangés dans le repertoire : 
+micro-shell/target/rls/incremental
+
+```
+#### 2.1.2. Affichons un caractère invitant à taper une commande
+
+
+
+
 
