@@ -1,15 +1,17 @@
 # ProjetRust4IABDS2Lama
 
-## 1 Questions : Rappels de Rust, généralités
+## 1 Rappels de Rust, généralités
 
 1.
 
 ```
-En Rust, les références permettent d'emprunter une variable sans en prendre la propriété car En Rust, les variables sont 
-immuables par défaut. Tout comme les variables, les références aussi peuvent être mutables (que sur une variable 
-mutable et une seule à la fois). "&" signifie référence constante et "&mut" signifie référence mutable (notons qu'on 
-ne peut avoir les 2 types sur une même variable). Elle ne peuvent pas "vivre" plus longtemps que la variable qu'elle 
-référence.
+En Rust, les références permettent d'emprunter une variable sans en 
+prendre la propriété car En Rust, les variables sont immuables par 
+défaut. Tout comme les variables, les références aussi peuvent être 
+mutables (que sur une variable mutable et une seule à la fois). "&" 
+signifie référence constante et "&mut" signifie référence mutable 
+(notons qu'on ne peut avoir les 2 types sur une même variable). Elle
+ ne peuvent pas "vivre" plus longtemps que la variable qu'elle référence.
 ```
 
 2.
@@ -33,7 +35,7 @@ Rust est compilé nativement (assembleur sous forme de code machine).
 
 ```
 La valeur maximale adressable pour un système avec un processeur de 8bits 
-est 2^8 soit 256 en décimal et 100 en Hexadécimal
+est 2^8 - 1 soit 255 en décimal et FF en Hexadécimal
 
 ```
 
@@ -51,12 +53,16 @@ Source : https://www.journaldunet.fr/web-tech/dictionnaire-du-webmastering/
 
 ## 2. Pratique - Micro-shell
 
-### 2.1 Questions : Deployement du projet et entrées sorties
+### 2.1 Deployement du projet et entrées sorties
 
-#### 2.1.1 Créons un projet binaire avec cargo 
+#### 2.1.1 Projet binaire avec cargo 
 
 ```
-Pour compiler et exécuter un programme on peut utiliser la commande 
+Pour Compiler un programme on utilise la commande Cargo build et une fois l'
+exécutable généré dans micro-shell/target/debug, on peut l'exécuter avec :
+./target/debug/nom_projet.
+
+Pour compiler et exécuter à la fois un programme on peut utiliser la commande 
 cargo run sous powershell ou utiliser la commande Run Code lorsque nous
 somme sous Visual Code avec tous les extensions installées.
 
@@ -68,7 +74,7 @@ Les binaires en mode debug sont rangés dans le repertoire :
 micro-shell/target/rls/incremental
 
 ```
-#### 2.1.2. Affichons un caractère invitant à taper une commande
+#### 2.1.2. Caractère invitant à taper une commande
 
 
 
