@@ -13,5 +13,4 @@ fn main() -> std::io::Result<()> {
     let mut user_input = String::with_capacity(256);
     stdin.read_line(&mut user_input)?;
     Ok(())
-    
 }
