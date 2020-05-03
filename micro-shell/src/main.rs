@@ -12,5 +12,14 @@ fn main() -> std::io::Result<()> {
 
     let mut user_input = String::with_capacity(256);
     stdin.read_line(&mut user_input)?;
+
+    use std::process::Command; //Création d'un process
+    let status = Command::new("ls")
+        .status()
+        .expect("failed to execute process");
+    println!("process exited with: {}", status);
+    assert!(status.success());
+    //Source : https://doc.rust-lang.org/1.34.0/std/io/struct.Stdout.html
+
     Ok(())
 }

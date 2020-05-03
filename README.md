@@ -55,7 +55,7 @@ Source : https://www.journaldunet.fr/web-tech/dictionnaire-du-webmastering/
 
 ### 2.1 Deployement du projet et entrées sorties
 
-#### 2.1.1 Projet binaire avec cargo 
+#### 1 Projet binaire avec cargo 
 
 ```
 Pour Compiler un programme on utilise la commande Cargo build et une fois l'
@@ -74,7 +74,7 @@ Les binaires en mode debug sont rangés dans le repertoire :
 micro-shell/target/rls/incremental
 
 ```
-#### 2.1.2. Caractère invitant à taper une commande
+#### 2. Caractère invitant à taper une commande
 
 ```
 fn main() -> std::io::Result<()> {
@@ -108,8 +108,35 @@ use std::process::Command; //Création d'un process
 ```
 //Source : https://doc.rust-lang.org/1.34.0/std/io/struct.Stdout.html
 ```
+### 3.1 Executer une commande
+
+#### 3. On réussi à exécuter une commande avec std::process::Command::status
+
+#### 4. Affichage du statut d’une commande
+```
+Rust nous force à réccupérer le statut car ce dernier étant une caractéristique du processus
+il permet de nous signaler s'il est en activité ou non. Un processus peut avoir 4 statuts:
+  * En cours
+  * Au repos
+  * Stoppé
+  * Zombie
+```
+```
+Source: https://help.gnome.org/users/gnome-system-monitor/stable/process-status.html.fr
+```
+#### 5. Activité du Programme pendant l'exécution de son enfant
+
+ ```
+ Pendant que le processus fils (enfant) s'exécute, le processus parent (programme) attend
+ tranquillement que ce dernier se termine (Statut "Stoppé") avant de continuer.
+ ```
+ #### 6. Exécuter une commande avec plusieurs argument
+
+ ```
 
 
+
+ ```
 
 
 
