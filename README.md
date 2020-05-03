@@ -32,16 +32,27 @@ Rust est compilé nativement (assembleur sous forme de code machine).
 4.
 
 ```
-La valeur maximale adressable pour un système avec un processeur de 8bits est 2^8 soit 256 en décimal et 100 en Hexadécimal
+La valeur maximale adressable pour un système avec un processeur de 8bits 
+est 2^8 soit 256 en décimal et 100 en Hexadécimal
 
 ```
 
 5.
 
 ```
-**un processus** est l’instance d’un programme informatique en cours d’exécution par un ou plusieurs threads d’un ordinateur. Concrètement, cela signifie qu’un processus permet l’exécution de diverses instructions par le microprocesseur, en fonction du programme en cours de fonctionnement.
+Un processus est l’instance d’un programme informatique en cours d’exécution 
+par un ou plusieurs threads d’un ordinateur. Concrètement, cela signifie qu’un 
+processus permet l’exécution de diverses instructions par le microprocesseur, 
+en fonction du programme en cours de fonctionnement.
 
+Source : https://www.journaldunet.fr/web-tech/dictionnaire-du-webmastering/
+1445274-process-informatique-definition-detaillee-et-concrete/
 ```
-```
-**Source** : https://www.journaldunet.fr/web-tech/dictionnaire-du-webmastering/1445274-process-informatique-definition-detaillee-et-concrete/
-```
+
+## 2. Pratique - Micro-shell
+
+### 2.1 Questions : Deployement du projet et entrées sorties
+
+#### 2.1.1 Créons un projet binaire avec cargo 
+
+
