@@ -89,8 +89,8 @@ fn main() -> std::io::Result<()> {
     // c'est mieux que de crash avec un unwrap ou expect ;)
     sorti.flush()?;
 
-    let mut user_input = String::with_capacity(256);
-    stdin.read_line(&mut user_input)?;
+    let mut entrebash = String::with_capacity(256);
+    stdin.read_line(&mut entrebash)?;
     Ok(())
 }
 ```
@@ -99,11 +99,11 @@ fn main() -> std::io::Result<()> {
 
 ```
 use std::process::Command; //Création d'un process
-    let status = Command::new("ls")
+let status = Command::new("ls")
         .status()
         .expect("failed to execute process");
-    println!("process exited with: {}", status);
-    assert!(status.success());
+println!("process exited with: {}", status);
+assert!(status.success());
 ```
 ```
 //Source : https://doc.rust-lang.org/1.34.0/std/io/struct.Stdout.html
@@ -133,9 +133,17 @@ Source: https://help.gnome.org/users/gnome-system-monitor/stable/process-status.
  #### 6. Exécuter une commande avec plusieurs argument
 
  ```
+use std::process::Command; 
+let status = Command::new("ls")
+    .arg("-l")
+    .arg("-a")
+    .status()
+    .expect("failed to execute process");
 
+println!("process exited with: {}", status);
+assert!(status.success());
 
-
+avec les arguments "-l" et "-a"
  ```
 
 
