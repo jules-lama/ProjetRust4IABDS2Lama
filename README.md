@@ -146,7 +146,7 @@ assert!(status.success());
 ```
 _avec les arguments "-l" et "-a"_
  
-## 4 Redirections - pipe my programs’
+## 4. Redirections - pipe my programs’
 
 ### 4.1 Questions : Redirections
 
@@ -160,6 +160,13 @@ Par exemple si deux processus veulent utiliser un tube ils faut qu'ils aient un 
 _Source_: _Explication du prof sur les les thread concurrentes_
 
 #### 8. Version basique pour un simple 'ls' redirigé dans le programme 'echo'
+
+#### 9. Version plus avancée où deux programmes s’exécutent en même temps et gèrent plusieurs arguments 
+####    aux deux commandes.
+
+## 5. Executions en concurence : Gérer des commandes en fond
+
+#### 10. Processus id
 
 
 
