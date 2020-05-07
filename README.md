@@ -148,6 +148,18 @@ assert!(status.success());
 
 avec les arguments "-l" et "-a"
  ```
+## 4 Redirections - pipe my programs’
+
+### 4.1 Questions : Redirections
+
+#### 7. Définition d’un tupe entre deux programmes citez vos sources
+
+```
+Un tube est un moyen de transmission de données d'un processus à un autre. Un processus met les données ou envoi une
+commande dans un coté du tube (écriture) et un autre processus les prends de l'autre côté du tube (en lecture).
+Par exemple si deux processus veulent utiliser un tube ils faut qu'ils aient un même processus père.
+```
+_Source_: Explication du prof sur les les thread concurrentes
 
 
 
