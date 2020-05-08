@@ -174,7 +174,10 @@ Il permet ainsi d'identifier le processus dans la plupart des commandes s'appliq
 ```
 _Source:_ *https://fr.wikipedia.org/wiki/Identifiant_de_processus*
 
+#### Inspiration
 
+_Cours Rust du Prof_
+_Rustdoc_
 
 
 
