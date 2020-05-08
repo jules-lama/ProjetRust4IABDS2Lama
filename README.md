@@ -168,6 +168,12 @@ _Source_: _Explication du prof sur les les thread concurrentes_
 
 #### 10. Processus id
 
+```
+Un Processus ID (PID) est un code unique attribué sur les systèmes Unix ou Windows à tout processus lors de son démarrage. 
+Il permet ainsi d'identifier le processus dans la plupart des commandes s'appliquant sur un processus donné (comme kill).
+```
+_Source:_ *https://fr.wikipedia.org/wiki/Identifiant_de_processus*
+
 
 
 
