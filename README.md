@@ -177,8 +177,8 @@ _Source:_ *https://fr.wikipedia.org/wiki/Identifiant_de_processus*
 
 #### Inspiration
 
-_Cours Rust du Prof_
-_Rustdoc_
+1. *Cours Rust du Prof*
+2. *Rustdoc*
 
 
 
