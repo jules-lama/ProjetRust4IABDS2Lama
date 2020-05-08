@@ -26,6 +26,27 @@ fn redirection() {
         .expect("failed to execute process");
 }
 
+fn processus_en_fond() {
+
+    //Creation de la commande(processus)
+    let mut commandefond = Command::new("echo")
+        .arg("Message d'essai")
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .spawn()
+        .expect("failed to execute process");
+
+    let stdin = commandefond.stdin.as_mut().expect("failed to get stdin");
+        stdin.write_all(b"Verification").expect("failed to write to stdin");
+
+    //Création de la commande (processus) qui va activer l'exécution en fond
+
+    let commandesorti = commandefond
+        .wait()
+        .expect("failed to wait on child");
+
+}
+
 fn main() -> std::io::Result<()> {
     let stdin = io::stdin();
     let stdout = io::stdout();
@@ -49,7 +70,8 @@ fn main() -> std::io::Result<()> {
     println!("process exited with: {}", status);
     assert!(status.success());
 
-    redirection();
+    //redirection();
+    processus_en_fond();
 
     Ok(())
     //Source : https://doc.rust-lang.org/1.34.0/std/io/struct.Stdout.html
